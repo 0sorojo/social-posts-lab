@@ -33,5 +33,9 @@ export class PostFormComponent implements OnInit {
     this.inputValue = true;
   }
 
+  // toggleForm() {
+  // this.inputValue = !this.inputValue;
+  // }
+
   ngOnInit(): void {}
 }
