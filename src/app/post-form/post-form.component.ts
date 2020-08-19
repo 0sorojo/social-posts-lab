@@ -15,13 +15,15 @@ export class PostFormComponent implements OnInit {
   constructor() {}
 
   onSubmit(form: NgForm) {
-    let newSubmission: Post = {
-      title: form.value.title,
-      thought: form.value.thought,
-    };
-    this.submitted.emit(newSubmission);
+    this.submitted.emit(form.value);
     form.reset();
   }
+
+  // let newSubmission: Post = {
+  //   title: form.value.title,
+  //   thought: form.value.thought,
+  // };
+  // this.submitted.emit(newSubmission);
 
   setValueToFalse() {
     this.inputValue = false;
