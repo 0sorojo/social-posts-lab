@@ -1,0 +1,18 @@
+.thought-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #f3f1f7, white);
+  margin: 0px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.words {
+  flex: 1;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}

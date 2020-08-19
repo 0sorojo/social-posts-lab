@@ -1,0 +1,29 @@
+<div>
+  <div class="new-thought" (click)="setValueToTrue()" *ngIf="!inputValue">
+    <p>New Thought</p>
+  </div>
+
+  <form
+    class="submit-form"
+    #submitThought="ngForm"
+    (ngSubmit)="onSubmit(submitThought)"
+    *ngIf="inputValue"
+    (submit)="setValueToFalse()"
+  >
+    <input
+      class="one-line"
+      type="text"
+      name="title"
+      placeholder="Title Here"
+      ngModel
+    />
+    <input
+      class="one-line"
+      type="text"
+      name="thought"
+      placeholder="Thought Here"
+      ngModel
+    />
+    <button class="one-line-button">Add</button>
+  </form>
+</div>

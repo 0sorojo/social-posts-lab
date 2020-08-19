@@ -1,0 +1,17 @@
+.new-thought {
+  border: solid 1px black;
+  border-radius: 10px;
+  background: white;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.submit-form {
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  margin: 20px 0;
+}

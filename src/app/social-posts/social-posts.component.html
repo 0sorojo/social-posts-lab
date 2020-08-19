@@ -1,0 +1,15 @@
+<main class="main">
+  <section class="thought-action-center">
+    <app-header></app-header>
+    <app-post-form (submitted)="onSubmit($event)"></app-post-form>
+    <div>
+      <ul class="thought-list">
+        <app-post
+          *ngFor="let post of posts; index as i"
+          [postReference]="post"
+          (deleted)="onDelete(i)"
+        ></app-post>
+      </ul>
+    </div>
+  </section>
+</main>
